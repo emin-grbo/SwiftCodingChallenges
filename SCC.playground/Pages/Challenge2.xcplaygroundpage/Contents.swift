@@ -2,6 +2,15 @@
 
 import Foundation
 
-var str = "Hello, playground"
+extension String {
+    func isPalindrome() -> Bool {
+        return self.uppercased() == String(self.reversed()).uppercased()
+    }
+}
 
-//: [Next](@next)
+"abloba".isPalindrome()
+
+assert("rotator".isPalindrome() == true, "FAIL!")
+assert("Rats live on no evil star".isPalindrome() == true, "FAIL!")
+assert("Never odd or even".isPalindrome() == false, "FAIL!")
+assert("Hello, world".isPalindrome() == false, "FAIL!")
