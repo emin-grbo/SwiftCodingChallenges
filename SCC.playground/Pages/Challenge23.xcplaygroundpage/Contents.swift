@@ -19,6 +19,3 @@ assert(isItInt("01010101"))
 assert(isItInt("123456789"))
 assert(isItInt("9223372036854775808"))
 assert(!isItInt("1.01"))
-
-
-
